@@ -17,9 +17,9 @@ evaluación de sistemas que usan IA.
 ## Datos y calidad de datos
 
 - [DataPulse](https://github.com/JuanSGarciaC/datapulse): ingesta validada con cuarentena, modelado con dbt
-  y conciliaciones que el CI verifica.
+  y conciliaciones que el CI verifica · [caso de estudio QA](https://github.com/JuanSGarciaC/datapulse/blob/main/docs/QA_CASE_STUDY.md).
 - [Datos abiertos Colombia](https://github.com/JuanSGarciaC/datos-abiertos-colombia-educacion):
-  ETL de datos.gov.co con conciliación contra la fuente.
+  ETL de datos.gov.co con [conciliación contra la fuente](https://github.com/JuanSGarciaC/datos-abiertos-colombia-educacion/blob/main/docs/RECONCILIACION.md).
 - [Triaje de solicitudes](https://github.com/JuanSGarciaC/triaje-solicitudes): clasificación con
   LLM, revisión humana y evaluación con un conjunto de prueba separado.
 
