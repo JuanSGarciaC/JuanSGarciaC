@@ -23,4 +23,17 @@ evaluación de sistemas que usan IA.
 - [Triaje de solicitudes](https://github.com/JuanSGarciaC/triaje-solicitudes): clasificación con
   LLM, revisión humana y evaluación con un conjunto de prueba separado.
 
+## IA con respaldo y evaluación medida
+
+En mis proyectos la IA nunca decide sola: siempre hay un camino sin IA, una persona tiene
+la última palabra y lo que hace el modelo se mide contra un conjunto etiquetado a mano.
+
+| Proyecto | Respaldo | Medición |
+|---|---|---|
+| [StoryLens QA](https://github.com/JuanSGarciaC/storylens-qa) | Reglas deterministas citadas a su norma; la IA solo sugiere y la persona acepta o descarta | En 13 historias no vistas: reglas F1 0,71; IA F1 0,37–0,46 en tres corridas |
+| [Triaje de solicitudes](https://github.com/JuanSGarciaC/triaje-solicitudes) | Aprobación automática solo con confianza ≥ 0,75 y prioridad no alta; el resto va a revisión humana | Prueba final de 10 casos: categoría 90 % con Gemini frente a 60 % con reglas |
+
+También publico lo que salió mal: en StoryLens la evaluación destapó un bug que descartaba
+hallazgos correctos, y en Triaje la confianza del modelo resultó poco calibrada.
+
 **Stack:** Python · FastAPI · pytest · Postman/Newman · Playwright · SQL/PostgreSQL · dbt · React · GitHub Actions · Docker
