@@ -65,10 +65,10 @@ Cada repositorio trae pruebas automáticas, CI en cada push y capturas del siste
 <a href="https://github.com/JuanSGarciaC/triaje-solicitudes">Código</a> · <a href="https://triaje-solicitudes-demo.onrender.com">Demo</a> · <a href="https://triaje-solicitudes-demo.onrender.com/docs">API</a>
 </td>
 <td width="50%" valign="top">
-<a href="https://github.com/JuanSGarciaC/datos-abiertos-colombia-educacion"><img src="https://raw.githubusercontent.com/JuanSGarciaC/datos-abiertos-colombia-educacion/main/docs/img/11-calidad-datos.png" alt="Panel de calidad de los datos de matrícula de educación superior de datos.gov.co"></a>
+<a href="https://github.com/JuanSGarciaC/datos-abiertos-colombia-educacion"><img src="https://raw.githubusercontent.com/JuanSGarciaC/datos-abiertos-colombia-educacion/main/docs/img/pipeline-en-vivo.gif" alt="El pipeline de datos abiertos se ejecuta en vivo: extracción, validación, carga y conciliación con la fuente"></a>
 <h3>Datos abiertos Colombia</h3>
 <sub>Datos · ETL y conciliación</sub>
-<p>Descarga matrícula de educación superior de datos.gov.co, la valida, la concilia contra la fuente, calcula estadística descriptiva y la muestra en un tablero.</p>
+<p>Descarga matrícula de educación superior de datos.gov.co, la valida, la concilia contra la fuente y calcula estadística descriptiva. El tablero muestra el mapa del pipeline y lo ejecuta en vivo con datos reales.</p>
 <p><sub>Python · FastAPI · SQLite · React</sub></p>
 <a href="https://github.com/JuanSGarciaC/datos-abiertos-colombia-educacion">Código</a> · <a href="https://github.com/JuanSGarciaC/datos-abiertos-colombia-educacion/blob/main/docs/RECONCILIACION.md">Conciliación con la fuente</a>
 </td>
