@@ -1,12 +1,14 @@
 # Juan Sebastián García C.
 
-**QA Engineer | API & Integration Testing | Python | SQL** · Disponible para trabajo remoto
+**QA Engineer · API & Integration Testing · Python · SQL**
+
+Disponible para trabajo remoto · [LinkedIn](https://www.linkedin.com/in/juansgc) · [Demo en vivo: StoryLens QA](https://storylens-qa.onrender.com)
 
 Diseño pruebas de requisitos, APIs e integraciones, y automatizo su verificación con pytest,
 Newman, Playwright y CI. Complemento con calidad de datos (ETL, SQL, conciliaciones) y con
 evaluación de sistemas que usan IA.
 
-## Proyectos principales
+## QA, APIs e integraciones
 
 | Proyecto | Qué demuestra |
 |---|---|
@@ -16,12 +18,11 @@ evaluación de sistemas que usan IA.
 
 ## Datos y calidad de datos
 
-- [DataPulse](https://github.com/JuanSGarciaC/datapulse): ingesta validada con cuarentena, modelado con dbt
-  y conciliaciones que el CI verifica · [caso de estudio QA](https://github.com/JuanSGarciaC/datapulse/blob/main/docs/QA_CASE_STUDY.md).
-- [Datos abiertos Colombia](https://github.com/JuanSGarciaC/datos-abiertos-colombia-educacion):
-  ETL de datos.gov.co con [conciliación contra la fuente](https://github.com/JuanSGarciaC/datos-abiertos-colombia-educacion/blob/main/docs/RECONCILIACION.md).
-- [Triaje de solicitudes](https://github.com/JuanSGarciaC/triaje-solicitudes): clasificación con
-  LLM, revisión humana y evaluación con un conjunto de prueba separado.
+| Proyecto | Qué demuestra |
+|---|---|
+| [DataPulse](https://github.com/JuanSGarciaC/datapulse) · [caso de estudio QA](https://github.com/JuanSGarciaC/datapulse/blob/main/docs/QA_CASE_STUDY.md) | Ingesta validada con cuarentena, modelado con dbt y conciliaciones que el CI verifica |
+| [Datos abiertos Colombia](https://github.com/JuanSGarciaC/datos-abiertos-colombia-educacion) | ETL de datos.gov.co con [conciliación contra la fuente](https://github.com/JuanSGarciaC/datos-abiertos-colombia-educacion/blob/main/docs/RECONCILIACION.md) |
+| [Triaje de solicitudes](https://github.com/JuanSGarciaC/triaje-solicitudes) | Clasificación con LLM, revisión humana y evaluación con un conjunto de prueba separado |
 
 ## IA con respaldo y evaluación medida
 
@@ -36,4 +37,10 @@ la última palabra y lo que hace el modelo se mide contra un conjunto etiquetado
 También publico lo que salió mal: en StoryLens la evaluación destapó un bug que descartaba
 hallazgos correctos, y en Triaje la confianza del modelo resultó poco calibrada.
 
-**Stack:** Python · FastAPI · pytest · Postman/Newman · Playwright · SQL/PostgreSQL · dbt · React · GitHub Actions · Docker
+## Stack
+
+Python · FastAPI · pytest · Postman/Newman · Playwright · SQL/PostgreSQL · dbt · React · GitHub Actions · Docker
+
+---
+
+El código de estos repositorios se publica para consulta. Todos los derechos reservados: su uso, copia o distribución requiere mi autorización por escrito.
