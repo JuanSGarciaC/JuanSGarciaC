@@ -5,8 +5,8 @@
 Disponible para trabajo remoto · [LinkedIn](https://www.linkedin.com/in/juansgc)
 
 Diseño pruebas de requisitos, APIs e integraciones, y automatizo su verificación con pytest,
-Newman, Playwright y CI. Complemento con calidad de datos (ETL, SQL, conciliaciones) y con
-evaluación de sistemas que usan IA.
+Newman, Playwright y CI. Complemento con calidad de datos (ETL, SQL, conciliaciones), pruebas de
+seguridad web (OWASP Top 10) y evaluación de sistemas que usan IA.
 
 **Demos en vivo:** [StoryLens QA](https://storylens-qa.onrender.com) ·
 [Integrador de webhooks](https://integrador-webhooks-demo.onrender.com) ·
@@ -65,12 +65,12 @@ Cada repositorio trae pruebas automáticas, CI en cada push y capturas del siste
 <a href="https://github.com/JuanSGarciaC/triaje-solicitudes">Código</a> · <a href="https://triaje-solicitudes-demo.onrender.com">Demo</a> · <a href="https://triaje-solicitudes-demo.onrender.com/docs">API</a>
 </td>
 <td width="50%" valign="top">
-<a href="https://github.com/JuanSGarciaC/datos-abiertos-colombia-educacion"><img src="https://raw.githubusercontent.com/JuanSGarciaC/datos-abiertos-colombia-educacion/main/docs/img/pipeline-en-vivo.gif" alt="El pipeline de datos abiertos se ejecuta en vivo: extracción, validación, carga y conciliación con la fuente"></a>
-<h3>Datos abiertos Colombia</h3>
-<sub>Datos · ETL y conciliación</sub>
-<p>Descarga matrícula de educación superior de datos.gov.co, la valida, la concilia contra la fuente y calcula estadística descriptiva. El tablero muestra el mapa del pipeline y lo ejecuta en vivo con datos reales.</p>
-<p><sub>Python · FastAPI · SQLite · React</sub></p>
-<a href="https://github.com/JuanSGarciaC/datos-abiertos-colombia-educacion">Código</a> · <a href="https://github.com/JuanSGarciaC/datos-abiertos-colombia-educacion/blob/main/docs/RECONCILIACION.md">Conciliación con la fuente</a>
+<a href="https://github.com/JuanSGarciaC/laboratorio-defensa"><img src="https://raw.githubusercontent.com/JuanSGarciaC/laboratorio-defensa/b9a34bb08fec03be3338197f06c025ed0ac415d0/docs/img/fuerza-bruta.gif" alt="Fuerza bruta de login: entra en la versión vulnerable y queda bloqueada en la endurecida"></a>
+<h3>Laboratorio de defensa</h3>
+<sub>Seguridad · pruebas de ataque y endurecimiento</sub>
+<p>La misma aplicación web escrita dos veces, vulnerable y endurecida. Un lienzo lanza inyección SQL, XSS, recorrido de rutas y fuerza bruta, y una prueba objetiva dice cuál tuvo éxito. Los ataques no salen del proceso.</p>
+<p><sub>Python · FastAPI · React · pytest · Playwright</sub></p>
+<a href="https://github.com/JuanSGarciaC/laboratorio-defensa">Código</a> · <a href="https://github.com/JuanSGarciaC/laboratorio-defensa#resultados-medidos">Resultados medidos</a>
 </td>
 </tr>
 <tr>
@@ -93,7 +93,8 @@ Cada repositorio trae pruebas automáticas, CI en cada push y capturas del siste
 | Requisitos | Reviso historias de usuario contra reglas citadas a su norma y derivo casos trazables | [StoryLens QA](https://github.com/JuanSGarciaC/storylens-qa) |
 | APIs e integraciones | Firma HMAC, idempotencia, reintentos y permisos, con pytest y Newman | [Integrador de webhooks](https://github.com/JuanSGarciaC/integrador-webhooks) · [NexusFlow](https://github.com/JuanSGarciaC/nexusflow) |
 | Interfaz de punta a punta | Playwright contra el sistema real levantado en Docker | [StoryLens QA](https://github.com/JuanSGarciaC/storylens-qa) · [NexusFlow](https://github.com/JuanSGarciaC/nexusflow) |
-| Calidad de datos | Validación con cuarentena y conciliación de totales contra la fuente | [DataPulse](https://github.com/JuanSGarciaC/datapulse) · [Datos abiertos Colombia](https://github.com/JuanSGarciaC/datos-abiertos-colombia-educacion) |
+| Calidad de datos | Validación con cuarentena y conciliación de totales contra la fuente | [DataPulse](https://github.com/JuanSGarciaC/datapulse) |
+| Seguridad web | Ataques del OWASP Top 10 automatizados contra una versión vulnerable y otra endurecida, con prueba objetiva de éxito | [Laboratorio de defensa](https://github.com/JuanSGarciaC/laboratorio-defensa) |
 | Sistemas con IA | Conjunto etiquetado a mano, métricas por clase, revisión humana y evals con juez | [Triaje de solicitudes](https://github.com/JuanSGarciaC/triaje-solicitudes) · [Cortex Agent](https://github.com/JuanSGarciaC/cortex-agent) |
 
 ## IA con respaldo y evaluación medida
