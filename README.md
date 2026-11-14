@@ -29,12 +29,12 @@ Cada repositorio trae pruebas automáticas, CI en cada push y capturas del siste
 <a href="https://github.com/JuanSGarciaC/storylens-qa">Código</a> · <a href="https://storylens-qa.onrender.com">Demo</a> · <a href="https://storylens-qa.onrender.com/probar">Prueba tu historia</a>
 </td>
 <td width="50%" valign="top">
-<a href="https://github.com/JuanSGarciaC/integrador-webhooks"><img src="https://raw.githubusercontent.com/JuanSGarciaC/integrador-webhooks/main/docs/screenshots/demo-flujo.gif" alt="Un webhook falla dos veces con 503 y se entrega al tercer intento"></a>
-<h3>Integrador de webhooks</h3>
-<sub>QA · APIs e integraciones</sub>
-<p>Recibe webhooks de GitHub, valida la firma HMAC, los guarda y los entrega desde un worker. Idempotencia, reintentos con backoff y jitter, y cola de fallidos que una persona reprocesa.</p>
-<p><sub>Python · FastAPI · React · pytest · Newman</sub></p>
-<a href="https://github.com/JuanSGarciaC/integrador-webhooks">Código</a> · <a href="https://integrador-webhooks-demo.onrender.com">Demo</a> · <a href="https://integrador-webhooks-demo.onrender.com/docs">API</a>
+<a href="https://github.com/JuanSGarciaC/laboratorio-defensa"><img src="https://raw.githubusercontent.com/JuanSGarciaC/laboratorio-defensa/main/docs/img/fuerza-bruta.gif" alt="Fuerza bruta de login: entra en la versión vulnerable y queda bloqueada en la endurecida"></a>
+<h3>Laboratorio de defensa</h3>
+<sub>Seguridad · pruebas de ataque y endurecimiento</sub>
+<p>La misma aplicación web escrita dos veces, vulnerable y endurecida. Un lienzo lanza inyección SQL, XSS, recorrido de rutas y fuerza bruta, y una prueba objetiva dice cuál tuvo éxito. Los ataques no salen del proceso.</p>
+<p><sub>Python · FastAPI · React · pytest · Playwright</sub></p>
+<a href="https://github.com/JuanSGarciaC/laboratorio-defensa">Código</a> · <a href="https://github.com/JuanSGarciaC/laboratorio-defensa#resultados-medidos">Resultados medidos</a>
 </td>
 </tr>
 <tr>
@@ -65,12 +65,12 @@ Cada repositorio trae pruebas automáticas, CI en cada push y capturas del siste
 <a href="https://github.com/JuanSGarciaC/triaje-solicitudes">Código</a> · <a href="https://triaje-solicitudes-demo.onrender.com">Demo</a> · <a href="https://triaje-solicitudes-demo.onrender.com/docs">API</a>
 </td>
 <td width="50%" valign="top">
-<a href="https://github.com/JuanSGarciaC/laboratorio-defensa"><img src="https://raw.githubusercontent.com/JuanSGarciaC/laboratorio-defensa/main/docs/img/fuerza-bruta.gif" alt="Fuerza bruta de login: entra en la versión vulnerable y queda bloqueada en la endurecida"></a>
-<h3>Laboratorio de defensa</h3>
-<sub>Seguridad · pruebas de ataque y endurecimiento</sub>
-<p>La misma aplicación web escrita dos veces, vulnerable y endurecida. Un lienzo lanza inyección SQL, XSS, recorrido de rutas y fuerza bruta, y una prueba objetiva dice cuál tuvo éxito. Los ataques no salen del proceso.</p>
-<p><sub>Python · FastAPI · React · pytest · Playwright</sub></p>
-<a href="https://github.com/JuanSGarciaC/laboratorio-defensa">Código</a> · <a href="https://github.com/JuanSGarciaC/laboratorio-defensa#resultados-medidos">Resultados medidos</a>
+<a href="https://github.com/JuanSGarciaC/integrador-webhooks"><img src="https://raw.githubusercontent.com/JuanSGarciaC/integrador-webhooks/main/docs/screenshots/demo-flujo.gif" alt="Un webhook falla dos veces con 503 y se entrega al tercer intento"></a>
+<h3>Integrador de webhooks</h3>
+<sub>QA · APIs e integraciones</sub>
+<p>Recibe webhooks de GitHub, valida la firma HMAC, los guarda y los entrega desde un worker. Idempotencia, reintentos con backoff y jitter, y cola de fallidos que una persona reprocesa.</p>
+<p><sub>Python · FastAPI · React · pytest · Newman</sub></p>
+<a href="https://github.com/JuanSGarciaC/integrador-webhooks">Código</a> · <a href="https://integrador-webhooks-demo.onrender.com">Demo</a> · <a href="https://integrador-webhooks-demo.onrender.com/docs">API</a>
 </td>
 </tr>
 <tr>
