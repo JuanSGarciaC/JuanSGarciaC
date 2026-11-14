@@ -65,7 +65,7 @@ Cada repositorio trae pruebas automáticas, CI en cada push y capturas del siste
 <a href="https://github.com/JuanSGarciaC/triaje-solicitudes">Código</a> · <a href="https://triaje-solicitudes-demo.onrender.com">Demo</a> · <a href="https://triaje-solicitudes-demo.onrender.com/docs">API</a>
 </td>
 <td width="50%" valign="top">
-<a href="https://github.com/JuanSGarciaC/laboratorio-defensa"><img src="https://raw.githubusercontent.com/JuanSGarciaC/laboratorio-defensa/b9a34bb08fec03be3338197f06c025ed0ac415d0/docs/img/fuerza-bruta.gif" alt="Fuerza bruta de login: entra en la versión vulnerable y queda bloqueada en la endurecida"></a>
+<a href="https://github.com/JuanSGarciaC/laboratorio-defensa"><img src="https://raw.githubusercontent.com/JuanSGarciaC/laboratorio-defensa/main/docs/img/fuerza-bruta.gif" alt="Fuerza bruta de login: entra en la versión vulnerable y queda bloqueada en la endurecida"></a>
 <h3>Laboratorio de defensa</h3>
 <sub>Seguridad · pruebas de ataque y endurecimiento</sub>
 <p>La misma aplicación web escrita dos veces, vulnerable y endurecida. Un lienzo lanza inyección SQL, XSS, recorrido de rutas y fuerza bruta, y una prueba objetiva dice cuál tuvo éxito. Los ataques no salen del proceso.</p>
