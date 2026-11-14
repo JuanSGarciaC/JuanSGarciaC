@@ -92,30 +92,42 @@ Cada repositorio trae pruebas automáticas, CI en cada push y capturas del siste
 |---|---|---|
 | Requisitos | Reviso historias de usuario contra reglas citadas a su norma y derivo casos trazables | [StoryLens QA](https://github.com/JuanSGarciaC/storylens-qa) |
 | APIs e integraciones | Firma HMAC, idempotencia, reintentos y permisos, con pytest y Newman | [Integrador de webhooks](https://github.com/JuanSGarciaC/integrador-webhooks) · [NexusFlow](https://github.com/JuanSGarciaC/nexusflow) |
-| Interfaz de punta a punta | Playwright contra el sistema real levantado en Docker | [StoryLens QA](https://github.com/JuanSGarciaC/storylens-qa) · [NexusFlow](https://github.com/JuanSGarciaC/nexusflow) |
-| Calidad de datos | Validación con cuarentena y conciliación de totales contra la fuente | [DataPulse](https://github.com/JuanSGarciaC/datapulse) |
+| Contratos | El CI falla si el OpenAPI cambia sin regenerarse, y un job compara la simulación con la API pública real | [Integrador de webhooks](https://github.com/JuanSGarciaC/integrador-webhooks) · [DataPulse](https://github.com/JuanSGarciaC/datapulse) |
+| Interfaz de punta a punta | Playwright contra el sistema real levantado en Docker | [StoryLens QA](https://github.com/JuanSGarciaC/storylens-qa) · [NexusFlow](https://github.com/JuanSGarciaC/nexusflow) · [Integrador de webhooks](https://github.com/JuanSGarciaC/integrador-webhooks) · [Triaje de solicitudes](https://github.com/JuanSGarciaC/triaje-solicitudes) · [Laboratorio de defensa](https://github.com/JuanSGarciaC/laboratorio-defensa) |
+| Accesibilidad | axe en las pruebas de componentes y de punta a punta, contra WCAG 2.1 AA | [StoryLens QA](https://github.com/JuanSGarciaC/storylens-qa) |
+| Carga y recuperación | k6 sobre ejecuciones concurrentes y límites de uso; copia de PostgreSQL con restauración verificada en el CI | [NexusFlow](https://github.com/JuanSGarciaC/nexusflow) |
+| Calidad de datos | Validación con cuarentena, pruebas de dbt y conciliación de totales contra la fuente | [DataPulse](https://github.com/JuanSGarciaC/datapulse) |
 | Seguridad web | Ataques del OWASP Top 10 automatizados contra una versión vulnerable y otra endurecida, con prueba objetiva de éxito | [Laboratorio de defensa](https://github.com/JuanSGarciaC/laboratorio-defensa) |
-| Sistemas con IA | Conjunto etiquetado a mano, métricas por clase, revisión humana y evals con juez | [Triaje de solicitudes](https://github.com/JuanSGarciaC/triaje-solicitudes) · [Cortex Agent](https://github.com/JuanSGarciaC/cortex-agent) |
+| Seguridad en el CI | Auditoría de dependencias (pip-audit), análisis estático (Bandit), imágenes Docker (Trivy) y secretos en el historial (gitleaks) | [NexusFlow](https://github.com/JuanSGarciaC/nexusflow) · [DataPulse](https://github.com/JuanSGarciaC/datapulse) · [StoryLens QA](https://github.com/JuanSGarciaC/storylens-qa) |
+| Sistemas con IA | Conjunto etiquetado a mano, métricas por clase, revisión humana, inyección de instrucciones y evals con juez | [Triaje de solicitudes](https://github.com/JuanSGarciaC/triaje-solicitudes) · [StoryLens QA](https://github.com/JuanSGarciaC/storylens-qa) · [Cortex Agent](https://github.com/JuanSGarciaC/cortex-agent) |
+
+Cobertura medida en el CI: 94 % en el Integrador de webhooks, 91 % en DataPulse (mínimo exigido 90 %) y 88 % en el backend de NexusFlow (mínimo exigido 85 %).
 
 ## IA con respaldo y evaluación medida
 
-En mis proyectos la IA nunca decide sola: siempre hay un camino sin IA, una persona tiene
-la última palabra y lo que hace el modelo se mide contra un conjunto etiquetado a mano.
+En mis proyectos la IA no decide sola: hay un camino sin IA, una persona tiene la última
+palabra en las decisiones y lo que hace el modelo se mide contra casos etiquetados a mano.
 
 | Proyecto | Respaldo | Medición |
 |---|---|---|
 | [StoryLens QA](https://github.com/JuanSGarciaC/storylens-qa) | Reglas deterministas citadas a su norma; la IA solo sugiere y la persona acepta o descarta | En 13 historias no vistas: reglas F1 0,71; IA F1 0,37–0,46 en tres corridas |
 | [Triaje de solicitudes](https://github.com/JuanSGarciaC/triaje-solicitudes) | Aprobación automática solo con confianza ≥ 0,75 y prioridad no alta; el resto va a revisión humana | Prueba final de 10 casos: categoría 90 % con Gemini frente a 60 % con reglas |
+| [Cortex Agent](https://github.com/JuanSGarciaC/cortex-agent) | La búsqueda y los evals de retrieval funcionan sin modelo; cada paso del agente queda en una traza consultable | Eval de agente con juez: de 5 a 6 casos de 6 según el modelo y la corrida (Gemini y un modelo local); recall@k y MRR en el CI |
 
 También publico lo que salió mal: en StoryLens la evaluación destapó un bug que descartaba
-hallazgos correctos, y en Triaje la confianza del modelo resultó poco calibrada.
+hallazgos correctos, en Triaje la confianza del modelo resultó poco calibrada y Cortex Agent
+quedó sin probar con la API de Claude.
 
 ## Stack
 
-- **Pruebas**: pytest · Postman/Newman · Playwright
-- **Backend y APIs**: Python · FastAPI · Celery · Redis
+- **Pruebas**: pytest · Postman/Newman · Playwright · Vitest · Testing Library · axe · k6
+- **Calidad de código**: Ruff · mypy · ESLint · cobertura con mínimo exigido en el CI
+- **Seguridad**: OWASP Top 10 · pip-audit · Bandit · Trivy · gitleaks
+- **Backend y APIs**: Python · FastAPI · Celery · Redis · OpenAPI
 - **Datos**: SQL · PostgreSQL · SQLite · dbt · Prefect · Polars
-- **Frontend**: React · TypeScript · Streamlit
+- **IA**: Gemini · Ollama · MCP · RAG híbrido (BM25 y vectores) · evals con juez
+- **Frontend**: React · TypeScript · Vite · Streamlit
+- **Observabilidad**: Prometheus · Grafana
 - **Entrega**: GitHub Actions · Docker · Docker Compose
 
 ## Contacto
