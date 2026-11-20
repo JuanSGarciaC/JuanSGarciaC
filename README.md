@@ -8,6 +8,8 @@ Diseño pruebas de requisitos, APIs e integraciones, y automatizo su verificaci�
 Newman, Playwright y CI. Complemento con calidad de datos (ETL, SQL, conciliaciones), pruebas de
 seguridad web (OWASP Top 10) y evaluación de sistemas que usan IA.
 
+<img src="assets/terminal.svg" width="860" alt="Terminal que corre las pruebas de seis proyectos: Integrador de webhooks, 115 pruebas y 94 % de cobertura, y Newman con 13 aserciones sin fallos; NexusFlow, 373 pruebas y 88 % de cobertura; DataPulse, 286 pruebas y 91 %; Laboratorio de defensa, 45 pruebas y 4 ataques que entran en la versión vulnerable y fallan en la endurecida; Triaje de solicitudes, categoría correcta en 9 de 10 casos con Gemini y 6 de 10 con reglas">
+
 **Demos en vivo:** [StoryLens QA](https://storylens-qa.onrender.com) ·
 [Integrador de webhooks](https://integrador-webhooks-demo.onrender.com) ·
 [Triaje de solicitudes](https://triaje-solicitudes-demo.onrender.com)
@@ -100,6 +102,11 @@ Cada repositorio trae pruebas automáticas, CI en cada push y capturas del siste
 | Seguridad web | Ataques del OWASP Top 10 automatizados contra una versión vulnerable y otra endurecida, con prueba objetiva de éxito | [Laboratorio de defensa](https://github.com/JuanSGarciaC/laboratorio-defensa) |
 | Seguridad en el CI | Auditoría de dependencias (pip-audit), análisis estático (Bandit), imágenes Docker (Trivy) y secretos en el historial (gitleaks) | [NexusFlow](https://github.com/JuanSGarciaC/nexusflow) · [DataPulse](https://github.com/JuanSGarciaC/datapulse) · [StoryLens QA](https://github.com/JuanSGarciaC/storylens-qa) |
 | Sistemas con IA | Conjunto etiquetado a mano, métricas por clase, revisión humana, inyección de instrucciones y evals con juez | [Triaje de solicitudes](https://github.com/JuanSGarciaC/triaje-solicitudes) · [StoryLens QA](https://github.com/JuanSGarciaC/storylens-qa) · [Cortex Agent](https://github.com/JuanSGarciaC/cortex-agent) |
+
+<picture>
+  <source media="(prefers-color-scheme: dark)" srcset="assets/cobertura-oscuro.svg">
+  <img src="assets/cobertura-claro.svg" width="860" alt="Gráfica de cobertura en escala de 0 a 100 %: Integrador de webhooks 94 %; DataPulse 91 % con mínimo exigido 90 %; backend de NexusFlow 88 % con mínimo exigido 85 %">
+</picture>
 
 Cobertura medida en el CI: 94 % en el Integrador de webhooks, 91 % en DataPulse (mínimo exigido 90 %) y 88 % en el backend de NexusFlow (mínimo exigido 85 %).
 
