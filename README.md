@@ -8,7 +8,10 @@ Diseño pruebas de requisitos, APIs e integraciones, y automatizo su verificaci�
 Newman, Playwright y CI. Complemento con calidad de datos (ETL, SQL, conciliaciones), pruebas de
 seguridad web (OWASP Top 10) y evaluación de sistemas que usan IA.
 
-<img src="assets/terminal.svg" width="860" alt="Terminal que corre las pruebas de seis proyectos: Integrador de webhooks, 115 pruebas y 94 % de cobertura, y Newman con 13 aserciones sin fallos; NexusFlow, 373 pruebas y 88 % de cobertura; DataPulse, 286 pruebas y 91 %; Laboratorio de defensa, 45 pruebas y 4 ataques que entran en la versión vulnerable y fallan en la endurecida; Triaje de solicitudes, categoría correcta en 9 de 10 casos con Gemini y 6 de 10 con reglas">
+<picture>
+  <source media="(max-width: 600px)" srcset="assets/terminal-movil.svg">
+  <img src="assets/terminal.svg" width="860" alt="Terminal que corre las pruebas de seis proyectos: Integrador de webhooks, 115 pruebas y 94 % de cobertura, y Newman con 13 aserciones sin fallos; NexusFlow, 373 pruebas y 88 % de cobertura; DataPulse, 286 pruebas y 91 %; Laboratorio de defensa, 45 pruebas y 4 ataques que entran en la versión vulnerable y fallan en la endurecida; Triaje de solicitudes, categoría correcta en 9 de 10 casos con Gemini y 6 de 10 con reglas">
+</picture>
 
 **Demos en vivo:** [StoryLens QA](https://storylens-qa.onrender.com) ·
 [Integrador de webhooks](https://integrador-webhooks-demo.onrender.com) ·
@@ -104,6 +107,8 @@ Cada repositorio trae pruebas automáticas, CI en cada push y capturas del siste
 | Sistemas con IA | Conjunto etiquetado a mano, métricas por clase, revisión humana, inyección de instrucciones y evals con juez | [Triaje de solicitudes](https://github.com/JuanSGarciaC/triaje-solicitudes) · [StoryLens QA](https://github.com/JuanSGarciaC/storylens-qa) · [Cortex Agent](https://github.com/JuanSGarciaC/cortex-agent) |
 
 <picture>
+  <source media="(max-width: 600px) and (prefers-color-scheme: dark)" srcset="assets/cobertura-oscuro-movil.svg">
+  <source media="(max-width: 600px)" srcset="assets/cobertura-claro-movil.svg">
   <source media="(prefers-color-scheme: dark)" srcset="assets/cobertura-oscuro.svg">
   <img src="assets/cobertura-claro.svg" width="860" alt="Gráfica de cobertura en escala de 0 a 100 %: Integrador de webhooks 94 %; DataPulse 91 % con mínimo exigido 90 %; backend de NexusFlow 88 % con mínimo exigido 85 %">
 </picture>

@@ -2,14 +2,16 @@
 # Genera la gráfica de cobertura. Uso:
 #   bash assets/generar-cobertura.sh assets/cobertura-claro.svg light
 #   bash assets/generar-cobertura.sh assets/cobertura-oscuro.svg dark
+#   añade «movil» como tercer argumento para la versión estrecha (etiqueta encima de la barra)
 export LC_ALL=C.UTF-8
-out=$1; theme=$2
+out=$1; theme=$2; modo=${3:-ancho}
 if [ "$theme" = dark ]; then TX=#e6edf3; MU=#9198a1; TR=#21262d; BAR=#3fb950
 else TX=#1f2328; MU=#59636e; TR=#eaeef2; BAR=#1f883d; fi
 # etiqueta|cobertura|mínimo (vacío si no hay)
 rows=("Integrador de webhooks|94|" "DataPulse|91|90" "NexusFlow (backend)|88|85")
-W=860; BX=220; BW=540; ROW=56; TOP=64
-H=$((TOP + ${#rows[@]}*ROW - 10))
+if [ "$modo" = movil ]; then W=420; BX=0; BW=350; ROW=78; TOP=82; BO=22; LY=14
+else W=860; BX=220; BW=540; ROW=56; TOP=64; BO=0; LY=15; fi
+H=$((TOP + ${#rows[@]}*ROW + BO - 10))
 f() { awk "BEGIN{printf \"%.2f\", $1}"; }
 DUR=1.2; FR=9
 {
@@ -27,14 +29,19 @@ cat <<HDR
 @media (prefers-reduced-motion:reduce){*{animation:none!important}}
 </style>
 <text x="0" y="20" fill="$TX" font-size="16" font-weight="600">Cobertura de pruebas medida en el CI</text>
-<text x="0" y="42" fill="$MU" font-size="13">Escala de 0 a 100 %. La línea marca el mínimo que exige el CI: por debajo, el build falla.</text>
 HDR
+if [ "$modo" = movil ]; then
+  echo "<text x=\"0\" y=\"42\" fill=\"$MU\" font-size=\"13\">Escala de 0 a 100 %. La línea marca el mínimo</text>"
+  echo "<text x=\"0\" y=\"60\" fill=\"$MU\" font-size=\"13\">que exige el CI: por debajo, el build falla.</text>"
+else
+  echo "<text x=\"0\" y=\"42\" fill=\"$MU\" font-size=\"13\">Escala de 0 a 100 %. La línea marca el mínimo que exige el CI: por debajo, el build falla.</text>"
+fi
 i=0
 for r in "${rows[@]}"; do
   IFS='|' read -r lab v min <<<"$r"
-  y=$((TOP + i*ROW)); d=$(f "0.3 + $i*0.25")
+  ly=$((TOP + i*ROW + LY)); y=$((TOP + i*ROW + BO)); d=$(f "0.3 + $i*0.25")
   bw=$(f "$BW*$v/100")
-  echo "<text x=\"0\" y=\"$((y+15))\" fill=\"$TX\">$lab</text>"
+  echo "<text x=\"0\" y=\"$ly\" fill=\"$TX\">$lab</text>"
   echo "<rect x=\"$BX\" y=\"$y\" width=\"$BW\" height=\"20\" rx=\"3\" fill=\"$TR\"/>"
   echo "<rect class=\"b\" style=\"animation-delay:${d}s\" x=\"$BX\" y=\"$y\" width=\"$bw\" height=\"20\" rx=\"3\" fill=\"$BAR\"/>"
   vx=$((BX+BW+14))
