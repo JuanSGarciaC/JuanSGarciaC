@@ -20,37 +20,37 @@
 <g>
 <text class="p" style="animation-delay:0.5s" x="20" y="68" textLength="176.40" lengthAdjust="spacing"><tspan fill="#58a6ff">integrador-webhooks</tspan><tspan fill="#9198a1"> $</tspan></text>
 <text x="204.80" y="68" fill="#e6edf3" textLength="134.40" lengthAdjust="spacing">pytest --cov=app</text>
-<rect class="c" style="transform:translateX(134.40px);animation-delay:0.5s;animation-duration:0.45s;animation-timing-function:steps(16)" x="203.80" y="53" width="148.40" height="20" fill="#0d1117"/>
+<rect class="c" style="transform:translateX(134.40px);animation-delay:0.5s;animation-duration:0.45s;animation-timing-function:steps(17,jump-none)" x="203.80" y="53" width="148.40" height="20" fill="#0d1117"/>
 <text class="o" style="animation-delay:1.20s" x="20" y="90" fill="#9198a1" xml:space="preserve"><tspan fill="#3fb950">✓</tspan> 115 passed · cobertura 94 %</text>
 </g>
 <g>
 <text class="p" style="animation-delay:1.65s" x="20" y="120" textLength="176.40" lengthAdjust="spacing"><tspan fill="#58a6ff">integrador-webhooks</tspan><tspan fill="#9198a1"> $</tspan></text>
 <text x="204.80" y="120" fill="#e6edf3" textLength="487.20" lengthAdjust="spacing">newman run docs/postman/integrador.postman_collection.json</text>
-<rect class="c" style="transform:translateX(487.20px);animation-delay:1.65s;animation-duration:1.62s;animation-timing-function:steps(58)" x="203.80" y="105" width="501.20" height="20" fill="#0d1117"/>
+<rect class="c" style="transform:translateX(487.20px);animation-delay:1.65s;animation-duration:1.62s;animation-timing-function:steps(59,jump-none)" x="203.80" y="105" width="501.20" height="20" fill="#0d1117"/>
 <text class="o" style="animation-delay:3.52s" x="20" y="142" fill="#9198a1" xml:space="preserve"><tspan fill="#3fb950">✓</tspan> 13 peticiones · 13 aserciones · 0 fallos</text>
 </g>
 <g>
 <text class="p" style="animation-delay:3.97s" x="20" y="172" textLength="92.40" lengthAdjust="spacing"><tspan fill="#58a6ff">nexusflow</tspan><tspan fill="#9198a1"> $</tspan></text>
 <text x="120.80" y="172" fill="#e6edf3" textLength="159.60" lengthAdjust="spacing">uv run pytest --cov</text>
-<rect class="c" style="transform:translateX(159.60px);animation-delay:3.97s;animation-duration:0.53s;animation-timing-function:steps(19)" x="119.80" y="157" width="173.60" height="20" fill="#0d1117"/>
+<rect class="c" style="transform:translateX(159.60px);animation-delay:3.97s;animation-duration:0.53s;animation-timing-function:steps(20,jump-none)" x="119.80" y="157" width="173.60" height="20" fill="#0d1117"/>
 <text class="o" style="animation-delay:4.75s" x="20" y="194" fill="#9198a1" xml:space="preserve"><tspan fill="#3fb950">✓</tspan> 373 passed · cobertura 88 % (mínimo exigido 85 %)</text>
 </g>
 <g>
 <text class="p" style="animation-delay:5.20s" x="20" y="224" textLength="92.40" lengthAdjust="spacing"><tspan fill="#58a6ff">datapulse</tspan><tspan fill="#9198a1"> $</tspan></text>
 <text x="120.80" y="224" fill="#e6edf3" textLength="327.60" lengthAdjust="spacing">uv run pytest --cov --cov-fail-under=90</text>
-<rect class="c" style="transform:translateX(327.60px);animation-delay:5.20s;animation-duration:1.09s;animation-timing-function:steps(39)" x="119.80" y="209" width="341.60" height="20" fill="#0d1117"/>
+<rect class="c" style="transform:translateX(327.60px);animation-delay:5.20s;animation-duration:1.09s;animation-timing-function:steps(40,jump-none)" x="119.80" y="209" width="341.60" height="20" fill="#0d1117"/>
 <text class="o" style="animation-delay:6.54s" x="20" y="246" fill="#9198a1" xml:space="preserve"><tspan fill="#3fb950">✓</tspan> 327 pruebas · cobertura 91 % (mínimo exigido 90 %)</text>
 </g>
 <g>
 <text class="p" style="animation-delay:6.99s" x="20" y="276" textLength="176.40" lengthAdjust="spacing"><tspan fill="#58a6ff">laboratorio-defensa</tspan><tspan fill="#9198a1"> $</tspan></text>
 <text x="204.80" y="276" fill="#e6edf3" textLength="75.60" lengthAdjust="spacing">pytest -q</text>
-<rect class="c" style="transform:translateX(75.60px);animation-delay:6.99s;animation-duration:0.25s;animation-timing-function:steps(9)" x="203.80" y="261" width="89.60" height="20" fill="#0d1117"/>
+<rect class="c" style="transform:translateX(75.60px);animation-delay:6.99s;animation-duration:0.25s;animation-timing-function:steps(10,jump-none)" x="203.80" y="261" width="89.60" height="20" fill="#0d1117"/>
 <text class="o" style="animation-delay:7.49s" x="20" y="298" fill="#9198a1" xml:space="preserve"><tspan fill="#3fb950">✓</tspan> 77 passed · 7 ataques: entran en la versión vulnerable, fallan en la endurecida</text>
 </g>
 <g>
 <text class="p" style="animation-delay:7.94s" x="20" y="328" textLength="168.00" lengthAdjust="spacing"><tspan fill="#58a6ff">triaje-solicitudes</tspan><tspan fill="#9198a1"> $</tspan></text>
 <text x="196.40" y="328" fill="#e6edf3" textLength="411.60" lengthAdjust="spacing">python eval/run_eval.py --csv eval/eval_final.csv</text>
-<rect class="c" style="transform:translateX(411.60px);animation-delay:7.94s;animation-duration:1.37s;animation-timing-function:steps(49)" x="195.40" y="313" width="425.60" height="20" fill="#0d1117"/>
+<rect class="c" style="transform:translateX(411.60px);animation-delay:7.94s;animation-duration:1.37s;animation-timing-function:steps(50,jump-none)" x="195.40" y="313" width="425.60" height="20" fill="#0d1117"/>
 <text class="o" style="animation-delay:9.56s" x="20" y="350" fill="#9198a1" xml:space="preserve"><tspan fill="#3fb950">✓</tspan> categoría correcta en la prueba final: Gemini 9/10 · reglas 6/10</text>
 </g>
 <g class="p" style="animation-delay:10.01s"><text x="20" y="380" fill="#9198a1">$</text><rect class="k" x="36.80" y="367" width="8" height="16" fill="#e6edf3"/></g>

@@ -27,7 +27,7 @@ type_line() {  # x y texto: texto tecleado con una cortina que se retira por pas
   local x=$1 yy=$2 s=$3 n=${#3}
   local w; w=$(f "$n*$CW"); local dur; dur=$(f "$n*0.028")
   add "<text x=\"$x\" y=\"$yy\" fill=\"#e6edf3\" textLength=\"$w\" lengthAdjust=\"spacing\">$s</text>"
-  add "<rect class=\"c\" style=\"transform:translateX(${w}px);animation-delay:${t}s;animation-duration:${dur}s;animation-timing-function:steps($n)\" x=\"$(f "$x-1")\" y=\"$((yy-15))\" width=\"$(f "$w+14")\" height=\"20\" fill=\"#0d1117\"/>"
+  add "<rect class=\"c\" style=\"transform:translateX(${w}px);animation-delay:${t}s;animation-duration:${dur}s;animation-timing-function:steps($((n+1)),jump-none)\" x=\"$(f "$x-1")\" y=\"$((yy-15))\" width=\"$(f "$w+14")\" height=\"20\" fill=\"#0d1117\"/>"
   t=$(f "$t + $dur + 0.1")
 }
 for b in "${blocks[@]}"; do
