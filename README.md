@@ -62,7 +62,7 @@ Cada repositorio trae pruebas automáticas, CI en cada push y capturas del siste
 </tr>
 <tr>
 <td width="50%" valign="top">
-<a href="https://github.com/JuanSGarciaC/triaje-solicitudes"><img src="https://raw.githubusercontent.com/JuanSGarciaC/triaje-solicitudes/main/docs/img/demo-lienzo.gif" alt="Una solicitud urgente recorre el lienzo: clasificador, política y revisión humana"></a>
+<a href="https://github.com/JuanSGarciaC/triaje-solicitudes"><img src="https://raw.githubusercontent.com/JuanSGarciaC/triaje-solicitudes/main/docs/img/demo-panel.gif" alt="Prueba tu solicitud: el tique se imprime y se sella; luego la cola por urgencia y una corrección que estampa CORREGIDA"></a>
 <h3>Triaje de solicitudes (Sello)</h3>
 <sub>IA aplicada · evaluación y revisión humana</sub>
 <p>Clasifica solicitudes de soporte de TI con un LLM y decide si se aprueban solas o pasan a una persona, con el motivo a la vista en cada tique. Suma «Prueba tu solicitud», plazos por prioridad, tablero por equipo, recorrido guiado de 60 s, métricas de la mesa, avisos firmados con HMAC y respuestas sugeridas. Evaluación con casos etiquetados.</p>
