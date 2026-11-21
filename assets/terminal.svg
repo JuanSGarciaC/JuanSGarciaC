@@ -1,6 +1,6 @@
 <svg xmlns="http://www.w3.org/2000/svg" width="860" height="394" viewBox="0 0 860 394" role="img" aria-labelledby="t d" font-family="ui-monospace,SFMono-Regular,'SF Mono',Menlo,Consolas,'Liberation Mono',monospace" font-size="14">
 <title id="t">Terminal con las pruebas de los proyectos</title>
-<desc id="d">Integrador de webhooks: 115 pruebas pasan, cobertura 94 %; Newman: 13 peticiones, 13 aserciones, 0 fallos. NexusFlow: 373 pruebas, cobertura 88 % con mínimo 85 %. DataPulse: 286 pruebas, cobertura 91 % con mínimo 90 %. Laboratorio de defensa: 45 pruebas; los 4 ataques entran en la versión vulnerable y fallan en la endurecida. Triaje de solicitudes: categoría correcta en 9 de 10 casos con Gemini y 6 de 10 con reglas.</desc>
+<desc id="d">Integrador de webhooks: 115 pruebas pasan, cobertura 94 %; Newman: 13 peticiones, 13 aserciones, 0 fallos. NexusFlow: 373 pruebas, cobertura 88 % con mínimo 85 %. DataPulse: 327 pruebas, cobertura 91 % con mínimo 90 %. Laboratorio de defensa: 77 pruebas; los 7 ataques entran en la versión vulnerable y fallan en la endurecida. Triaje de solicitudes: categoría correcta en 9 de 10 casos con Gemini y 6 de 10 con reglas.</desc>
 <style>
 .c{animation:type 1s both}
 .o,.p{animation:show .25s ease-out both}
@@ -39,13 +39,13 @@
 <text class="p" style="animation-delay:5.20s" x="20" y="224" textLength="92.40" lengthAdjust="spacing"><tspan fill="#58a6ff">datapulse</tspan><tspan fill="#9198a1"> $</tspan></text>
 <text x="120.80" y="224" fill="#e6edf3" textLength="327.60" lengthAdjust="spacing">uv run pytest --cov --cov-fail-under=90</text>
 <rect class="c" style="transform:translateX(327.60px);animation-delay:5.20s;animation-duration:1.09s;animation-timing-function:steps(39)" x="119.80" y="209" width="341.60" height="20" fill="#0d1117"/>
-<text class="o" style="animation-delay:6.54s" x="20" y="246" fill="#9198a1" xml:space="preserve"><tspan fill="#3fb950">✓</tspan> 286 passed · cobertura 91 %</text>
+<text class="o" style="animation-delay:6.54s" x="20" y="246" fill="#9198a1" xml:space="preserve"><tspan fill="#3fb950">✓</tspan> 327 pruebas · cobertura 91 % (mínimo exigido 90 %)</text>
 </g>
 <g>
 <text class="p" style="animation-delay:6.99s" x="20" y="276" textLength="176.40" lengthAdjust="spacing"><tspan fill="#58a6ff">laboratorio-defensa</tspan><tspan fill="#9198a1"> $</tspan></text>
 <text x="204.80" y="276" fill="#e6edf3" textLength="75.60" lengthAdjust="spacing">pytest -q</text>
 <rect class="c" style="transform:translateX(75.60px);animation-delay:6.99s;animation-duration:0.25s;animation-timing-function:steps(9)" x="203.80" y="261" width="89.60" height="20" fill="#0d1117"/>
-<text class="o" style="animation-delay:7.49s" x="20" y="298" fill="#9198a1" xml:space="preserve"><tspan fill="#3fb950">✓</tspan> 45 passed · 4 ataques: entran en la versión vulnerable, fallan en la endurecida</text>
+<text class="o" style="animation-delay:7.49s" x="20" y="298" fill="#9198a1" xml:space="preserve"><tspan fill="#3fb950">✓</tspan> 77 passed · 7 ataques: entran en la versión vulnerable, fallan en la endurecida</text>
 </g>
 <g>
 <text class="p" style="animation-delay:7.94s" x="20" y="328" textLength="168.00" lengthAdjust="spacing"><tspan fill="#58a6ff">triaje-solicitudes</tspan><tspan fill="#9198a1"> $</tspan></text>

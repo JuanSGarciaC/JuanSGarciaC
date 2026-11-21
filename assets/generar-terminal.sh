@@ -13,8 +13,8 @@ blocks=(
 "integrador-webhooks|pytest --cov=app|115 passed · cobertura 94 %|115 passed · cobertura 94 %"
 "integrador-webhooks|newman run^docs/postman/integrador.postman_collection.json|13 peticiones · 13 aserciones · 0 fallos|13 peticiones · 13 aserciones · 0 fallos"
 "nexusflow|uv run pytest --cov|373 passed · cobertura 88 % (mínimo exigido 85 %)|373 passed · cobertura 88 % (mínimo 85 %)"
-"datapulse|uv run pytest --cov --cov-fail-under=90|286 passed · cobertura 91 %|286 passed · cobertura 91 %"
-"laboratorio-defensa|pytest -q|45 passed · 4 ataques: entran en la versión vulnerable, fallan en la endurecida|45 passed · 4 ataques: entran en la vulnerable,^no en la endurecida"
+"datapulse|uv run pytest --cov --cov-fail-under=90|327 pruebas · cobertura 91 % (mínimo exigido 90 %)|327 pruebas · cobertura 91 % (mínimo 90 %)"
+"laboratorio-defensa|pytest -q|77 passed · 7 ataques: entran en la versión vulnerable, fallan en la endurecida|77 passed · 7 ataques: entran en la vulnerable,^no en la endurecida"
 "triaje-solicitudes|python eval/run_eval.py^--csv eval/eval_final.csv|categoría correcta en la prueba final: Gemini 9/10 · reglas 6/10|categoría: Gemini 9/10 · reglas 6/10"
 )
 f() { awk "BEGIN{printf \"%.2f\", $1}"; }
@@ -69,7 +69,7 @@ H=$((y + 14))
 cat <<HDR
 <svg xmlns="http://www.w3.org/2000/svg" width="$W" height="$H" viewBox="0 0 $W $H" role="img" aria-labelledby="t d" font-family="ui-monospace,SFMono-Regular,'SF Mono',Menlo,Consolas,'Liberation Mono',monospace" font-size="14">
 <title id="t">Terminal con las pruebas de los proyectos</title>
-<desc id="d">Integrador de webhooks: 115 pruebas pasan, cobertura 94 %; Newman: 13 peticiones, 13 aserciones, 0 fallos. NexusFlow: 373 pruebas, cobertura 88 % con mínimo 85 %. DataPulse: 286 pruebas, cobertura 91 % con mínimo 90 %. Laboratorio de defensa: 45 pruebas; los 4 ataques entran en la versión vulnerable y fallan en la endurecida. Triaje de solicitudes: categoría correcta en 9 de 10 casos con Gemini y 6 de 10 con reglas.</desc>
+<desc id="d">Integrador de webhooks: 115 pruebas pasan, cobertura 94 %; Newman: 13 peticiones, 13 aserciones, 0 fallos. NexusFlow: 373 pruebas, cobertura 88 % con mínimo 85 %. DataPulse: 327 pruebas, cobertura 91 % con mínimo 90 %. Laboratorio de defensa: 77 pruebas; los 7 ataques entran en la versión vulnerable y fallan en la endurecida. Triaje de solicitudes: categoría correcta en 9 de 10 casos con Gemini y 6 de 10 con reglas.</desc>
 <style>
 .c{animation:type 1s both}
 .o,.p{animation:show .25s ease-out both}

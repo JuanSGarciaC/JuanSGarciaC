@@ -1,6 +1,6 @@
 <svg xmlns="http://www.w3.org/2000/svg" width="470" height="592" viewBox="0 0 470 592" role="img" aria-labelledby="t d" font-family="ui-monospace,SFMono-Regular,'SF Mono',Menlo,Consolas,'Liberation Mono',monospace" font-size="14">
 <title id="t">Terminal con las pruebas de los proyectos</title>
-<desc id="d">Integrador de webhooks: 115 pruebas pasan, cobertura 94 %; Newman: 13 peticiones, 13 aserciones, 0 fallos. NexusFlow: 373 pruebas, cobertura 88 % con mínimo 85 %. DataPulse: 286 pruebas, cobertura 91 % con mínimo 90 %. Laboratorio de defensa: 45 pruebas; los 4 ataques entran en la versión vulnerable y fallan en la endurecida. Triaje de solicitudes: categoría correcta en 9 de 10 casos con Gemini y 6 de 10 con reglas.</desc>
+<desc id="d">Integrador de webhooks: 115 pruebas pasan, cobertura 94 %; Newman: 13 peticiones, 13 aserciones, 0 fallos. NexusFlow: 373 pruebas, cobertura 88 % con mínimo 85 %. DataPulse: 327 pruebas, cobertura 91 % con mínimo 90 %. Laboratorio de defensa: 77 pruebas; los 7 ataques entran en la versión vulnerable y fallan en la endurecida. Triaje de solicitudes: categoría correcta en 9 de 10 casos con Gemini y 6 de 10 con reglas.</desc>
 <style>
 .c{animation:type 1s both}
 .o,.p{animation:show .25s ease-out both}
@@ -45,14 +45,14 @@
 <text class="p" style="animation-delay:5.34s" x="20" y="334" fill="#9198a1">$</text>
 <text x="36.80" y="334" fill="#e6edf3" textLength="327.60" lengthAdjust="spacing">uv run pytest --cov --cov-fail-under=90</text>
 <rect class="c" style="transform:translateX(327.60px);animation-delay:5.34s;animation-duration:1.09s;animation-timing-function:steps(39)" x="35.80" y="319" width="341.60" height="20" fill="#0d1117"/>
-<text class="o" style="animation-delay:6.68s" x="20" y="356" fill="#9198a1" xml:space="preserve"><tspan fill="#3fb950">✓</tspan> 286 passed · cobertura 91 %</text>
+<text class="o" style="animation-delay:6.68s" x="20" y="356" fill="#9198a1" xml:space="preserve"><tspan fill="#3fb950">✓</tspan> 327 pruebas · cobertura 91 % (mínimo 90 %)</text>
 </g>
 <g>
 <text class="p" style="animation-delay:7.13s" x="20" y="386" fill="#58a6ff"># laboratorio-defensa</text>
 <text class="p" style="animation-delay:7.13s" x="20" y="408" fill="#9198a1">$</text>
 <text x="36.80" y="408" fill="#e6edf3" textLength="75.60" lengthAdjust="spacing">pytest -q</text>
 <rect class="c" style="transform:translateX(75.60px);animation-delay:7.13s;animation-duration:0.25s;animation-timing-function:steps(9)" x="35.80" y="393" width="89.60" height="20" fill="#0d1117"/>
-<text class="o" style="animation-delay:7.63s" x="20" y="430" fill="#9198a1" xml:space="preserve"><tspan fill="#3fb950">✓</tspan> 45 passed · 4 ataques: entran en la vulnerable,</text>
+<text class="o" style="animation-delay:7.63s" x="20" y="430" fill="#9198a1" xml:space="preserve"><tspan fill="#3fb950">✓</tspan> 77 passed · 7 ataques: entran en la vulnerable,</text>
 <text class="o" style="animation-delay:7.63s" x="20" y="452" fill="#9198a1" xml:space="preserve">  no en la endurecida</text>
 </g>
 <g>

@@ -10,7 +10,7 @@ seguridad web (OWASP Top 10) y evaluación de sistemas que usan IA.
 
 <picture>
   <source media="(max-width: 600px)" srcset="assets/terminal-movil.svg">
-  <img src="assets/terminal.svg" width="860" alt="Terminal que corre las pruebas de seis proyectos: Integrador de webhooks, 115 pruebas y 94 % de cobertura, y Newman con 13 aserciones sin fallos; NexusFlow, 373 pruebas y 88 % de cobertura; DataPulse, 286 pruebas y 91 %; Laboratorio de defensa, 45 pruebas y 4 ataques que entran en la versión vulnerable y fallan en la endurecida; Triaje de solicitudes, categoría correcta en 9 de 10 casos con Gemini y 6 de 10 con reglas">
+  <img src="assets/terminal.svg" width="860" alt="Terminal que corre las pruebas de seis proyectos: Integrador de webhooks, 115 pruebas y 94 % de cobertura, y Newman con 13 aserciones sin fallos; NexusFlow, 373 pruebas y 88 % de cobertura; DataPulse, 327 pruebas y 91 %; Laboratorio de defensa, 77 pruebas y 7 ataques que entran en la versión vulnerable y fallan en la endurecida; Triaje de solicitudes, categoría correcta en 9 de 10 casos con Gemini y 6 de 10 con reglas">
 </picture>
 
 **Demos en vivo:** [StoryLens QA](https://storylens-qa.onrender.com) ·
