@@ -1,0 +1,69 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="470" height="592" viewBox="0 0 470 592" role="img" aria-labelledby="t d" font-family="ui-monospace,SFMono-Regular,'SF Mono',Menlo,Consolas,'Liberation Mono',monospace" font-size="14">
+<title id="t">Terminal con las pruebas de los proyectos</title>
+<desc id="d">Integrador de webhooks: 115 pruebas pasan, cobertura 94 %; Newman: 13 peticiones, 13 aserciones, 0 fallos. NexusFlow: 373 pruebas, cobertura 88 % con mínimo 85 %. DataPulse: 327 pruebas, cobertura 91 % con mínimo 90 %. Laboratorio de defensa: 77 pruebas; los 7 ataques entran en la versión vulnerable y fallan en la endurecida. Triaje de solicitudes: categoría correcta en 9 de 10 casos con Gemini y 6 de 10 con reglas.</desc>
+<style>
+.c{animation:type 1s both}
+.o,.p{animation:show .25s ease-out both}
+.k{animation:blink 1.1s steps(1) infinite}
+@keyframes type{from{transform:translateX(0)}}
+@keyframes show{from{opacity:0}}
+@keyframes blink{50%{opacity:0}}
+@media (prefers-reduced-motion:reduce){*{animation:none!important}}
+</style>
+<clipPath id="dentro"><rect x="1" y="37" width="468" height="554"/></clipPath>
+<rect x=".5" y=".5" width="469" height="591" rx="10" fill="#0d1117" stroke="#30363d"/>
+<path d="M.5 36V10.5a10 10 0 0 1 10-10h449a10 10 0 0 1 10 10V36z" fill="#161b22"/>
+<line x1="0" y1="36" x2="470" y2="36" stroke="#30363d"/>
+<circle cx="22" cy="18" r="5.5" fill="#484f58"/><circle cx="40" cy="18" r="5.5" fill="#484f58"/><circle cx="58" cy="18" r="5.5" fill="#484f58"/>
+<text x="235" y="23" text-anchor="middle" fill="#9198a1" font-size="13">~/proyectos · pruebas</text>
+<g clip-path="url(#dentro)">
+<g>
+<text class="p" style="animation-delay:0.5s" x="20" y="68" fill="#58a6ff"># integrador-webhooks</text>
+<text class="p" style="animation-delay:0.5s" x="20" y="90" fill="#9198a1">$</text>
+<text x="36.80" y="90" fill="#e6edf3" textLength="134.40" lengthAdjust="spacing">pytest --cov=app</text>
+<rect class="c" style="transform:translateX(134.40px);animation-delay:0.5s;animation-duration:0.45s;animation-timing-function:steps(17,jump-none)" x="35.80" y="75" width="148.40" height="20" fill="#0d1117"/>
+<text class="o" style="animation-delay:1.20s" x="20" y="112" fill="#9198a1" xml:space="preserve"><tspan fill="#3fb950">✓</tspan> 115 passed · cobertura 94 %</text>
+</g>
+<g>
+<text class="p" style="animation-delay:1.65s" x="20" y="142" fill="#58a6ff"># integrador-webhooks</text>
+<text class="p" style="animation-delay:1.65s" x="20" y="164" fill="#9198a1">$</text>
+<text x="36.80" y="164" fill="#e6edf3" textLength="100.80" lengthAdjust="spacing">newman run \</text>
+<rect class="c" style="transform:translateX(100.80px);animation-delay:1.65s;animation-duration:0.34s;animation-timing-function:steps(13,jump-none)" x="35.80" y="149" width="114.80" height="20" fill="#0d1117"/>
+<text x="53.60" y="186" fill="#e6edf3" textLength="394.80" lengthAdjust="spacing">docs/postman/integrador.postman_collection.json</text>
+<rect class="c" style="transform:translateX(394.80px);animation-delay:2.09s;animation-duration:1.32s;animation-timing-function:steps(48,jump-none)" x="52.60" y="171" width="408.80" height="20" fill="#0d1117"/>
+<text class="o" style="animation-delay:3.66s" x="20" y="208" fill="#9198a1" xml:space="preserve"><tspan fill="#3fb950">✓</tspan> 13 peticiones · 13 aserciones · 0 fallos</text>
+</g>
+<g>
+<text class="p" style="animation-delay:4.11s" x="20" y="238" fill="#58a6ff"># nexusflow</text>
+<text class="p" style="animation-delay:4.11s" x="20" y="260" fill="#9198a1">$</text>
+<text x="36.80" y="260" fill="#e6edf3" textLength="159.60" lengthAdjust="spacing">uv run pytest --cov</text>
+<rect class="c" style="transform:translateX(159.60px);animation-delay:4.11s;animation-duration:0.53s;animation-timing-function:steps(20,jump-none)" x="35.80" y="245" width="173.60" height="20" fill="#0d1117"/>
+<text class="o" style="animation-delay:4.89s" x="20" y="282" fill="#9198a1" xml:space="preserve"><tspan fill="#3fb950">✓</tspan> 373 passed · cobertura 88 % (mínimo 85 %)</text>
+</g>
+<g>
+<text class="p" style="animation-delay:5.34s" x="20" y="312" fill="#58a6ff"># datapulse</text>
+<text class="p" style="animation-delay:5.34s" x="20" y="334" fill="#9198a1">$</text>
+<text x="36.80" y="334" fill="#e6edf3" textLength="327.60" lengthAdjust="spacing">uv run pytest --cov --cov-fail-under=90</text>
+<rect class="c" style="transform:translateX(327.60px);animation-delay:5.34s;animation-duration:1.09s;animation-timing-function:steps(40,jump-none)" x="35.80" y="319" width="341.60" height="20" fill="#0d1117"/>
+<text class="o" style="animation-delay:6.68s" x="20" y="356" fill="#9198a1" xml:space="preserve"><tspan fill="#3fb950">✓</tspan> 327 pruebas · cobertura 91 % (mínimo 90 %)</text>
+</g>
+<g>
+<text class="p" style="animation-delay:7.13s" x="20" y="386" fill="#58a6ff"># laboratorio-defensa</text>
+<text class="p" style="animation-delay:7.13s" x="20" y="408" fill="#9198a1">$</text>
+<text x="36.80" y="408" fill="#e6edf3" textLength="75.60" lengthAdjust="spacing">pytest -q</text>
+<rect class="c" style="transform:translateX(75.60px);animation-delay:7.13s;animation-duration:0.25s;animation-timing-function:steps(10,jump-none)" x="35.80" y="393" width="89.60" height="20" fill="#0d1117"/>
+<text class="o" style="animation-delay:7.63s" x="20" y="430" fill="#9198a1" xml:space="preserve"><tspan fill="#3fb950">✓</tspan> 77 passed · 7 ataques: entran en la vulnerable,</text>
+<text class="o" style="animation-delay:7.63s" x="20" y="452" fill="#9198a1" xml:space="preserve">  no en la endurecida</text>
+</g>
+<g>
+<text class="p" style="animation-delay:8.08s" x="20" y="482" fill="#58a6ff"># triaje-solicitudes</text>
+<text class="p" style="animation-delay:8.08s" x="20" y="504" fill="#9198a1">$</text>
+<text x="36.80" y="504" fill="#e6edf3" textLength="210.00" lengthAdjust="spacing">python eval/run_eval.py \</text>
+<rect class="c" style="transform:translateX(210.00px);animation-delay:8.08s;animation-duration:0.70s;animation-timing-function:steps(26,jump-none)" x="35.80" y="489" width="224.00" height="20" fill="#0d1117"/>
+<text x="53.60" y="526" fill="#e6edf3" textLength="210.00" lengthAdjust="spacing">--csv eval/eval_final.csv</text>
+<rect class="c" style="transform:translateX(210.00px);animation-delay:8.88s;animation-duration:0.70s;animation-timing-function:steps(26,jump-none)" x="52.60" y="511" width="224.00" height="20" fill="#0d1117"/>
+<text class="o" style="animation-delay:9.83s" x="20" y="548" fill="#9198a1" xml:space="preserve"><tspan fill="#3fb950">✓</tspan> categoría: Gemini 9/10 · reglas 6/10</text>
+</g>
+<g class="p" style="animation-delay:10.28s"><text x="20" y="578" fill="#9198a1">$</text><rect class="k" x="36.80" y="565" width="8" height="16" fill="#e6edf3"/></g>
+</g>
+</svg>
