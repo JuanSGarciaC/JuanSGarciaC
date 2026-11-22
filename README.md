@@ -17,6 +17,10 @@ seguridad web (OWASP Top 10) y evaluación de sistemas que usan IA.
 [Integrador de webhooks](https://integrador-webhooks-demo.onrender.com) ·
 [Triaje de solicitudes](https://triaje-solicitudes-demo.onrender.com)
 
+**Páginas de proyecto:** [NexusFlow](https://juansgarciac.github.io/nexusflow/) ·
+[DataPulse](https://juansgarciac.github.io/datapulse/) ·
+[StoryLens QA](https://juansgarciac.github.io/storylens-qa/)
+
 <sub>Hosting gratuito: si nadie las visitó en los últimos 15 minutos, la primera carga tarda cerca de un minuto.</sub>
 
 ## Proyectos
@@ -31,7 +35,7 @@ Cada repositorio trae pruebas automáticas, CI en cada push y capturas del siste
 <sub>QA · requisitos y diseño de pruebas</sub>
 <p>Analiza historias de usuario antes de que se vuelvan defectos, genera casos de prueba trazables, organiza sesiones con evidencias y resume todo en métricas. Reglas deterministas siempre; la IA solo sugiere. Su página de presentación trae una demo que se usa sola: una historia vaga recibe 46 de 100 con cada hallazgo citado a ISO/IEC/IEEE 29148.</p>
 <p><sub>Python · FastAPI · React · pytest · Playwright</sub></p>
-<a href="https://github.com/JuanSGarciaC/storylens-qa">Código</a> · <a href="https://storylens-qa.onrender.com">Demo</a> · <a href="https://storylens-qa.onrender.com/probar">Prueba tu historia</a> · <a href="https://storylens-qa.onrender.com/inicio">Presentación</a>
+<a href="https://github.com/JuanSGarciaC/storylens-qa">Código</a> · <a href="https://storylens-qa.onrender.com">Demo</a> · <a href="https://storylens-qa.onrender.com/probar">Prueba tu historia</a> · <a href="https://juansgarciac.github.io/storylens-qa/">Presentación</a>
 </td>
 <td width="50%" valign="top">
 <a href="https://github.com/JuanSGarciaC/laboratorio-defensa"><img src="https://raw.githubusercontent.com/JuanSGarciaC/laboratorio-defensa/main/docs/img/fuerza-bruta.gif" alt="Fuerza bruta en la consola: terminal del atacante, resultado con el diff del código y pestaña Network"></a>
@@ -49,15 +53,15 @@ Cada repositorio trae pruebas automáticas, CI en cada push y capturas del siste
 <sub>Backend · automatización de procesos</sub>
 <p>Motor de workflows con pasos, condiciones y acciones contra APIs externas. Autenticación, RBAC, webhooks firmados, idempotencia, recuperación ante fallos y auditoría. Una página estática anima el cobro VIP: la pasarela responde 503, 503 y 201 a la misma Idempotency-Key y registra un solo cargo.</p>
 <p><sub>Python · FastAPI · PostgreSQL · Celery · Redis · React</sub></p>
-<a href="https://github.com/JuanSGarciaC/nexusflow">Código</a> · <a href="https://github.com/JuanSGarciaC/nexusflow/blob/main/docs/demo.md">Guion de la demo</a> · <a href="https://github.com/JuanSGarciaC/nexusflow/tree/main/site">Página del proyecto (código)</a>
+<a href="https://github.com/JuanSGarciaC/nexusflow">Código</a> · <a href="https://github.com/JuanSGarciaC/nexusflow/blob/main/docs/demo.md">Guion de la demo</a> · <a href="https://juansgarciac.github.io/nexusflow/">Página del proyecto</a>
 </td>
 <td width="50%" valign="top">
-<a href="https://github.com/JuanSGarciaC/datapulse"><img src="https://raw.githubusercontent.com/JuanSGarciaC/datapulse/main/docs/img/dashboard-demo.gif" alt="Mapa del pipeline de DataPulse en movimiento"></a>
+<a href="https://github.com/JuanSGarciaC/datapulse"><img src="https://raw.githubusercontent.com/JuanSGarciaC/datapulse/main/docs/img/panel-demo.gif" alt="Panel de DataPulse: del validador de contratos al linaje de un pedido hasta su archivo"></a>
 <h3>DataPulse</h3>
 <sub>Datos · ingeniería y calidad</sub>
 <p>Convierte CSV, JSON y una API REST paginada en datos confiables y trazables: ingesta validada con cuarentena, orquestación con Prefect, modelo estrella con dbt y conciliaciones que el CI verifica. El panel y la API suman validador de contratos en vivo, bandeja de cuarentena, linaje de un pedido hasta su archivo, caos en un clic con reintentos, frescura con SLA y tendencia de calidad; su página de presentación sigue seis registros reales por las capas.</p>
 <p><sub>Python · PostgreSQL · Prefect · dbt · Polars · Streamlit</sub></p>
-<a href="https://github.com/JuanSGarciaC/datapulse">Código</a> · <a href="https://github.com/JuanSGarciaC/datapulse/blob/main/docs/QA_CASE_STUDY.md">Caso de estudio QA</a>
+<a href="https://github.com/JuanSGarciaC/datapulse">Código</a> · <a href="https://github.com/JuanSGarciaC/datapulse/blob/main/docs/QA_CASE_STUDY.md">Caso de estudio QA</a> · <a href="https://juansgarciac.github.io/datapulse/">Página del proyecto</a>
 </td>
 </tr>
 <tr>
@@ -80,7 +84,7 @@ Cada repositorio trae pruebas automáticas, CI en cada push y capturas del siste
 </tr>
 <tr>
 <td width="50%" valign="top">
-<a href="https://github.com/JuanSGarciaC/cortex-agent"><img src="https://raw.githubusercontent.com/JuanSGarciaC/cortex-agent/main/docs/img/inicio.png" alt="Pantalla de inicio de Cortex Agent"></a>
+<a href="https://github.com/JuanSGarciaC/cortex-agent"><img src="https://raw.githubusercontent.com/JuanSGarciaC/cortex-agent/main/docs/img/inicio-demo.gif" alt="Inicio de Cortex Agent: el titular entra, las cifras cuentan y una traza simulada muestra cómo piensa un turno del agente"></a>
 <h3>Cortex Agent</h3>
 <sub>IA aplicada · agentes y evals</sub>
 <p>Harness de agente escrito a mano, sin frameworks: herramientas por MCP, RAG híbrido con citas, memoria de largo plazo y evals con juez, con vistas para ver cada paso del agente. El inicio muestra con una traza simulada cómo piensa un turno.</p>
